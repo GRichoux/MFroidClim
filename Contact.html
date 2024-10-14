@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Site Web</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/style_formulaire.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <script src="/script_header_footer.js"></script>
+        <link rel="stylesheet" href="/style_header_footer.css">
+        <div id="header"></div>
+
+        <div class="marge"></div>
+
+        <div class="form-container">
+          <!-- Bloc d'informations à gauche -->
+          <div class="contact-info">
+              <h2>Nos informations
+              </h2>
+              <h3>Téléphone :</h3>
+              <p>+33 (0)6 10 17 44 77</p>
+              <h3>Adresse postale :</h3>
+              <p>9 bis rue de Voisins, </p>
+              <p>91690 Saint-Cyr-la-Rivière</p>
+              <h3>Email :</h3>
+              <p> <a href="mailto:contact@gmail.com">mfroidclim@gmail.com</a></p>
+          </div>
+      
+          <!-- Formulaire à droite -->
+          <div class="contact-form">
+              <h2>Contactez-moi</h2>
+              <form action="https://formspree.io/f/meoqqjpv" method="POST" onsubmit="return confirmEnvoi(event)">
+                  <label for="name">Nom et Prénom</label>
+                  <input type="text" id="name" name="Nom" required>
+      
+                  <label for="subject">Sujet</label>
+                  <input type="text" id="subject" name="Objet" required>
+      
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="Adresse mail" required>
+      
+                  <label for="message">Message</label>
+                  <textarea id="message" name="Message" required></textarea>
+      
+                  <button type="submit">Envoyer</button>
+              </form>
+          </div>
+      </div>
+          
+      <div id="footer"></div>
+          
+    </body>
+
+</html>

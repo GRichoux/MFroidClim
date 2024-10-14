@@ -1,0 +1,198 @@
+header {
+    background-color: #2d2d2d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center;
+
+}
+
+header .logo-mobile, .logo-computer {
+    height: 80%;
+    align-items: center;
+}
+
+header .logo-mobile img,.logo-computer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+header .logo-mobile{
+    display: none;
+}
+
+header .header-buttons {
+    min-width: 343px;
+    justify-self: end;
+    justify-content: end; /* Aligne à droite */
+    align-items: center;
+}
+
+header button, header .dropbtn {
+    background-color: #beeeff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    text-align: center; /* Centre le texte du bouton */
+    transition: transform 0.2s ease; /* Transition douce pour le changement de taille */
+}
+
+header button:hover, header .dropbtn:hover {
+    background-color: #90aed0;
+    transform: scale(1.1);
+    transform-origin: center; /* Empêche le bouton de déplacer les autres lors de l'agrandissement */
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-weight: bold;
+    left: 0.55rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: #BEEEFF;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0.25rem;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin:  auto;
+    width: 90%;
+    padding: 5% 10%;
+}
+.dropdown-content a:hover {
+    border-radius: 0.3rem; 
+    background-color: #90aed0;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown menu 4 hamburger*/
+.dropdown-ham {
+    position: relative;
+    display: none;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #2d2d2d;
+    width: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-container {
+    display: flex;    
+    justify-content: space-between;
+}
+
+
+.colonne1, .colonne2{
+    margin: auto;
+    padding: 0;
+}
+
+.colonne1 {
+    text-align: left;
+}
+
+.colonne2{
+    text-align: end;
+}
+
+.Copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Pour les écrans de taille inférieure ou égale à 768px (taille commune pour les mobiles) */
+@media only screen and (max-width: 900px) {
+    main {
+        width: 100%;
+        min-width: unset; /* Désactive min-width */
+        padding: 2rem; /* Réduit légèrement les marges intérieures */
+    }
+    header {
+        justify-content: space-between;
+    }
+}  
+
+
+
+
+.hamburger {
+    display: none; 
+    color: #BEEEFF;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5% 0.5% 1.5%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #BEEEFF;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+}
+
+@media (max-width: 600px) {
+    header .logo-computer{
+        display: none;
+    }
+    header .logo-mobile{
+        display: block;
+    }
+
+    .header-buttons {
+        display: none; 
+    }
+    .hamburger {
+        display: block; 
+    }
+    .hamburger:hover {
+        border: solid #626ea1;
+    }
+    .mobile-menu.active {
+        display: block;
+        justify-self: end;
+        margin-right: 2rem;
+        position: absolute;
+        width: 10%;
+        min-width: 10rem; 
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <script src="/script_header_footer.js"></script>
+    <link rel="stylesheet" href="/style_header_footer.css">
+    <div id="header"></div>
+      
+    <div class="banner">
+        <link rel="stylesheet" href="/style_banner.css">
+        <div class="banner-text">
+            <h1>Bienvenue chez M Froid Clim</h1>
+            <p>Installation, dépannage, et vente d'équipement frigorifiques et de climatisation.</p>
+        </div>
+        <div class="banner-image">
+            <img src="images_folder/home_banner.jpeg" alt="Image de la bannière">
+        </div>
+    </div>
+
+    <main>
+      
+      
+        <section>
+
+          <div class="container">
+            <div class="column" id="industriel-column" onclick="toggleSection('industriel')">
+              <img src="images_folder/icone_usine.svg" alt="Industriel">
+              <h2>Industriel</h2>
+              <p><strong>˅</strong></p>
+            </div>
+            <div class="column" id="commercial-column" onclick="toggleSection('commercial')">
+              <img src="images_folder/icone_shop.svg" alt="Commercial">
+                <h2>Commercial</h2>
+                <p><strong>↧</strong></p>
+            </div>
+            <div class="column" id="particulier-column" onclick="toggleSection('particulier')">
+              <img src="images_folder/icone_maison.svg" alt="Particulier">
+                <h2>Particulier</h2>
+                <p>▼</p>
+            </div>
+          </div>
+        
+        
+          <!-- Volet déroulant -->
+          <div class="content" id="industriel-content">
+              <div class="text">
+                  <h3>Industriel</h3>
+                  <p>Voici le contenu pour le secteur industriel. Il peut s'agir d'une description, de services ou d'autres informations pertinentes.</p>
+                  <a href="/Nos_secteurs/Industriel.html" class="button-en-savoir-plus"><strong>En savoir plus ⭢</strong></a>
+              </div>
+              <div class="image">
+                  <img src="/Nos_secteurs/Images_Industriel/banner_industriel.jpg" alt="Image industriel">
+              </div>
+          </div>
+          
+          <div class="content" id="commercial-content">
+              <div class="text">
+                  <h3>Commercial</h3>
+                  <p>Voici le contenu pour le secteur commercial. Ce volet comprend des informations spécifiques au domaine commercial.</p>
+                  <a href="/Nos_secteurs/Commercial.html" class="button-en-savoir-plus"><strong>En savoir plus ⭢</strong></a>
+                </div>
+              <div class="image">
+                  <img src="/Nos_secteurs/Images_Commercial/banner_commercial.jpeg" alt="Image commercial">
+              </div>
+          </div>
+          
+          <div class="content" id="particulier-content">
+              <div class="text">
+                  <h3>Particulier</h3>
+                  <p>Voici le contenu pour le secteur particulier. Vous pouvez ajouter ici des services dédiés aux particuliers.</p>
+                  <a href="/Nos_secteurs/Particulier.html" class="button-en-savoir-plus"><strong>En savoir plus ⭢</strong></a>
+                </div>
+              <div class="image">
+                  <img src="/Nos_secteurs/Images_Particulier/banner_particulier.jpeg" alt="Image particulier">
+              </div>
+          </div>
+
+        
+      </section>
+
+
+
+      <section>
+
+        <div class="bloc-marques">
+          <div class="marques-text">
+            <h2>Nos marques</h2>
+          </div>
+
+      
+          <div class="grid-marques">
+            <img src="images_folder/logos/DAIKIN.png" alt="Daikin logo">
+            <img src="images_folder/logos/Hitaachi.png" alt="Hitachi logo">
+            <img src="images_folder/logos/LG.png" alt="LG logo">
+            <img src="images_folder/logos/mitsubishi.png" alt="Mitsubishi logo">
+            <img src="images_folder/logos/Panasonic.png" alt="Panasonic logo">
+            <img src="images_folder/logos/Samsung.png" alt="Samsung logo">
+          </div>
+        </div>        
+      </section>
+
+
+
+      
+    </main>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

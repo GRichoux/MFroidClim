@@ -1,0 +1,262 @@
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #beeeff;
+}
+
+
+
+
+
+h1, h2 {
+    color: #333;
+}
+
+
+
+main {
+    width: 65%;
+    min-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 3rem 5rem;
+    background-color: white;
+}
+
+
+
+
+.container {
+  display: flex;
+  background-color: #90aed0; /* Ajuste le style du container actif */
+  justify-content: space-evenly;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Style du container quand une colonne est active */
+.container.active-container {
+  background-color: #beeeff; /* Ajuste le style du container actif */
+  padding: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Colonne standard */
+.column {
+  width: 33.333%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 1rem 0;
+}
+.column img{
+  width: 40%;
+}
+.column h2{
+  transition: all  0.5s ease;
+  white-space: normal;  
+  max-width: 100%;
+}
+.column:hover {
+  background-color: #626ea1;
+}
+
+/* Colonne active */
+.column.active-column {
+  background-color: #626ea1; /* Couleur de la colonne active */
+}
+
+
+.column.active-column h2{
+  color: black;
+  transition: all  0.5s ease;
+}
+
+/* Volet déroulant */
+.content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  display: flex;  
+  align-items: center; 
+  background-color: #626ea1;
+  color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: all 0.5s ease;
+}
+
+/* Contenu actif */
+.content.active {
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 15rem;
+  transition: all 0.5s ease;
+}
+
+/* Textes et images dans le volet déroulant */
+.text { 
+  width: 45%;
+  margin: 2.5% ;
+}
+
+.image {
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: center;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style pour le bouton "En savoir plus" */
+.button-en-savoir-plus {
+    padding: 0.5rem 1rem; /* Espacement interne */
+    background-color: #beeeff; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 0.5rem; /* Coins arrondis */
+    cursor: pointer; /* Changement du curseur au survol */
+    text-decoration: none; /* Pas de soulignement sur le lien */
+    display: inline-block; /* Permet d'utiliser des marges */
+    transition: background-color 0.3s; /* Transition de couleur au survol */
+}
+/* Effet au survol */
+.button-en-savoir-plus:hover {
+    background-color: #90aed0; /* Couleur de fond au survol */
+}
+
+
+
+.secteur-text{
+    margin: auto;
+    padding: 2rem;
+    width: 40%;
+    text-align: start;
+}
+
+
+
+
+
+
+
+.bloc-marques {
+    object-position: center;
+    padding: 1rem 1rem;
+    background-color: #90aed0;
+    object-position: center;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+  
+  .marques-text {
+    margin-bottom: 1rem;
+  }
+  
+  .grid-marques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de tailles égales */
+    grid-template-rows: repeat(2, 1fr);   /* 2 lignes automatiques */
+    gap: 1rem; /* Espacement entre les images */
+    justify-items: center; /* Centrer les images horizontalement */
+  }
+  
+  .grid-marques img {
+    width: 100%; /* Taille fixe pour chaque image */
+    height: 4rem;
+    padding: 2% 4%;
+    object-fit: contain; /* Ajuster l'image à l'intérieur sans déformation */
+    background-color: white;
+  }
+
+
+
+
+
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+
+
+/* Pour les écrans de taille inférieure ou égale à 768px (taille commune pour les mobiles) */
+@media only screen and (max-width: 800px) {
+  main {
+      width: 100%;
+      min-width: unset; /* Désactive min-width */
+      padding: 2rem; /* Réduit légèrement les marges intérieures */
+  }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+body {
+  font-size: var(--font-size);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 1.5); /* Les titres seront plus grands proportionnellement */
+}
+
+p {
+  font-size: var(--font-size); /* La taille de police pour les paragraphes */
+}
+
+
+
+
+@media (max-width: 768px) {
+  :root {
+      --font-size: 12px; /* Taille de police minimale */
+  }
+}

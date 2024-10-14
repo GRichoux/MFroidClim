@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Site Web</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div id="header"></div>
+        <script src="/script_header_footer.js"></script>
+        <link rel="stylesheet" href="/style_header_footer.css">
+      
+        <div class="banner">
+        <link rel="stylesheet" href="/style_banner.css">
+            <div class="banner-text">
+                <h1>Froid industriel</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo lorem, interdum quis facilisis in, sagittis id dui. Vivamus varius volutpat gravida. Duis id iaculis ligula. Suspendisse ut dapibus lorem, a congue lectus. Donec scelerisque augue quis mauris sagittis facilisis.</p>
+            </div>
+            <div class="banner-image">
+                <img src="Images_Industriel/banner_industriel.jpg" alt="Image de la bannière">
+            </div>
+        </div>
+
+        <main>
+            <h1>Nos réalisations</h1>
+            <div class="gallery">
+                <div class="images-container" id="images-container"></div>
+                <button id="load-more" class="load-more" data-folder="/Nos_secteurs/Images_Industriel">Charger plus d'images ⬎</button>
+            </div>
+
+            <!-- Fenêtre modale pour afficher l'image en grand -->
+            <div id="image-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+            </div>
+            
+            <link rel="stylesheet" href="style_gallery.css">
+            <script src="script_gallery.js"></script>
+        
+        </main>
+        
+        <div id="footer"></div>
+
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    align-items: center; /* Aligne le texte et l'image au centre verticalement */
+    background-color: #626ea1; /* Couleur de fond */
+    padding: 0; /* Pas de padding */
+    margin-top: 5rem; /* Marge supérieure */
+    height: 15rem ;
+    overflow: hidden;
+}
+
+.banner-text {
+    height: 100%;
+    padding: 2.5%; /* Espacement interne */
+    width: 60%; /* Largeur du bloc texte */
+    min-width: 20rem;
+}
+
+.banner-text h1 {
+    font-size: 36px; /* Taille de police pour le titre */
+    color: #f1f1f1; /* Couleur du titre */
+}   
+
+.banner-text p {
+    font-size: 18px; /* Taille de police pour le paragraphe */
+    color: #dedede; /* Couleur du texte */
+}
+
+
+.banner-image {
+    flex: 1;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+}

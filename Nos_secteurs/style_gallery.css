@@ -1,0 +1,81 @@
+.gallery {
+    margin: 0 auto;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .images-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+}  
+
+.images-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem   ;
+    border: solid 0.05rem #626ea1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    cursor: pointer; /* Le curseur devient un doigt */
+}
+
+
+.load-more {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #90aed0;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.load-more:hover {
+    background-color: #626ea1;
+}
+
+
+
+
+/* Style pour la fenêtre modale */
+.modal {
+    display: none; /* Cacher par défaut */
+    position: fixed; 
+    z-index: 1000; /* Doit être au-dessus de tout le reste */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 0.5rem;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
