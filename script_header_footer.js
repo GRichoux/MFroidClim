@@ -22,7 +22,7 @@ function loadHeader() {
   
 // Fonction pour charger le contenu du footer
 function loadFooter() {
-  fetch('/footer.html')
+  fetch('../footer.html')
     .then(response => {
       if (!response.ok) {
         throw new Error('Erreur de chargement du fichier footer.html');
