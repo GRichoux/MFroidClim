@@ -33,6 +33,7 @@ header .logo-mobile{
 }
 
 header .header-buttons {
+    color: black;
     min-width: 343px;
     justify-self: end;
     justify-content: end; /* Aligne à droite */
