@@ -276,3 +276,17 @@ p {
       --font-size: 12px; /* Taille de police minimale */
   }
 }
+
+
+
+a[href^="tel"] {
+  color: inherit; /* Applique la même couleur que le texte environnant */
+  text-decoration: none; /* Enlève le soulignement */
+}
+
+button, 
+input[type="button"], 
+input[type="submit"] {
+    -webkit-appearance: none; /* Désactive le style par défaut des boutons iOS */
+    appearance: none;
+}
