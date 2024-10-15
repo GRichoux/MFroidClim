@@ -133,14 +133,16 @@ header button:hover, header .dropbtn:hover {
     }
 }  
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     header .logo-computer{
         display: none;
     }
     header .logo-mobile{
         display: block;
     }
+}
 
+@media (max-width: 600px) {
     .header-buttons {
         display: none; 
     }
