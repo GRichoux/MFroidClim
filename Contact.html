@@ -28,7 +28,7 @@
           
         
             <div class="header-buttons">
-              <button onclick="window.location.href='Accueil.html';">Accueil</button>
+              <button onclick="window.location.href='index.html';">Accueil</button>
               <div class="dropdown">
                   <button class="dropbtn">Nos secteurs ˅ <span class="arrow-down"></span></button>
                   <div class="dropdown-content">
@@ -47,7 +47,7 @@
             </div>
         
             <div class="mobile-menu" id="mobileMenu">
-              <button onclick="window.location.href='Accueil.html';">Accueil</button>
+              <button onclick="window.location.href='index.html';">Accueil</button>
               <div class="dropdown">
                   <button class="dropbtn">Nos secteurs ˅ <span class="arrow-down"></span></button>
                   <div class="dropdown-content">
@@ -82,45 +82,49 @@
               <p> <a href="mailto:contact@gmail.com">mfroidclim@gmail.com</a></p>
           </div>
       
-          <!-- Formulaire à droite -->
-          <div class="contact-form">
-              <h2>Contactez-moi</h2>
-              <form action="https://formspree.io/f/meoqqjpv" method="POST" onsubmit="return confirmEnvoi(event)">
-                  <label for="name">Nom et Prénom</label>
-                  <input type="text" id="name" name="Nom" required>
-      
-                  <label for="subject">Sujet</label>
-                  <input type="text" id="subject" name="Objet" required>
-      
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="Adresse mail" required>
-      
-                  <label for="message">Message</label>
-                  <textarea id="message" name="Message" required></textarea>
-      
-                  <button type="submit">Envoyer</button>
-              </form>
-          </div>
-      </div>
-          
-      <footer>
-    
-        <link rel="stylesheet" href="style_header_footer.css">
-        <div class="footer-container">
-            <div class="colonne1">
-                <p"><u>À propos de M Froid Clim</u></h3>
-                <p>Tél : +33 (0)6 10 17 44 77</p>
-                <p>Mail : mfroidclim@gmail.com</p>
-            </div>
-            <div class="colonne2">
-                <p>9 bis rue de Voisins</p>
-                <p>91690 Saint-Cyr-la-Rivière</p>
-                <p>SIRET : 951 950 021 00018</p>
+            <!-- Formulaire à droite -->
+            <div class="contact-form">
+                <h2>Contactez-moi</h2>
+                <form action="https://formspree.io/f/meoqqjpv" method="POST" onsubmit="return confirmEnvoi(event)">
+                    <label for="name">Nom et Prénom</label>
+                    <input type="text" id="name" name="Nom" required>
+        
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="Objet" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Adresse mail" required>
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" required></textarea>
+
+                    <!-- <label for="Pièce jointe">Document</label>
+                    <input type="file" name="attachment" accept="image/png, image/jpeg, image/gif, application/pdf"> -->
+        
+                    <button type="submit">Envoyer</button>
+                </form>
             </div>
         </div>
-        <div class="Copyright">
+          
+        <footer>
+    
+            <link rel="stylesheet" href="style_header_footer.css">
+            <div class="footer-container">
+                <div class="colonne1">
+                    <p"><u>À propos de M Froid Clim</u></h3>
+                    <p>Tél : +33 (0)6 10 17 44 77</p>
+                    <p>Mail : mfroidclim@gmail.com</p>
+                </div>
+                <div class="colonne2">
+                    <p>9 bis rue de Voisins</p>
+                    <p>91690 Saint-Cyr-la-Rivière</p>
+                    <p>SIRET : 951 950 021 00018</p>
+                </div>
+            </div>
+            <div class="Copyright">
             © Copyright 2024 M Froid Clim</div>
-      </footer>
+
+        </footer>
           
     </body>
 
