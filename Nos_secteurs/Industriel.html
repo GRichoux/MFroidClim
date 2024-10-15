@@ -9,12 +9,62 @@
     </head>
 
     <body>
-        <div id="header"></div>
-        <script src="/script_header_footer.js"></script>
-        <link rel="stylesheet" href="/style_header_footer.css">
+
+        
+        <header>
+
+            <link rel="stylesheet" href="../style_header_footer.css">
+        
+            <div class="logo-computer">
+              <img src="../images_folder/MFroidClim.png" alt="Logo de l'entreprise">
+            </div>
+            
+            <div class="logo-mobile">
+              <img src="../images_folder/MORSENU.png" alt="Image centrale">
+            </div>
+            
+        
+          
+        
+            <div class="header-buttons">
+              <button onclick="window.location.href='../Accueil.html';">Accueil</button>
+              <div class="dropdown">
+                  <button class="dropbtn">Nos secteurs ˅ <span class="arrow-down"></span></button>
+                  <div class="dropdown-content">
+                      <a href="Industriel.html">Industriel</a>
+                      <a href="Commercial.html">Commercial</a>
+                      <a href="Particulier.html">Particulier</a>
+                  </div>
+              </div>
+              <button onclick="window.location.href='../Contact.html';">Contact</button>
+            </div>
+        
+            
+            <script src="../script_header_footer.js"></script>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+              &#9776; 
+            </div>
+        
+            <div class="mobile-menu" id="mobileMenu">
+              <button onclick="window.location.href='../Accueil.html';">Accueil</button>
+              <div class="dropdown">
+                  <button class="dropbtn">Nos secteurs ˅ <span class="arrow-down"></span></button>
+                  <div class="dropdown-content">
+                      <a href="Industriel.html">Industriel</a>
+                      <a href="Commercial.html">Commercial</a>
+                      <a href="Particulier.html">Particulier</a>
+                  </div>
+              </div>
+              <button onclick="window.location.href='../Contact.html';">Contact</button>
+            </div>
+        
+        
+            
+            
+        </header>
       
         <div class="banner">
-        <link rel="stylesheet" href="/style_banner.css">
+        <link rel="stylesheet" href="../style_banner.css">
             <div class="banner-text">
                 <h1>Froid industriel</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas leo lorem, interdum quis facilisis in, sagittis id dui. Vivamus varius volutpat gravida. Duis id iaculis ligula. Suspendisse ut dapibus lorem, a congue lectus. Donec scelerisque augue quis mauris sagittis facilisis.</p>
@@ -25,8 +75,8 @@
         </div>
 
         <main>
-            <h1>Nos réalisations</h1>
             <div class="gallery">
+                <h2>Nos réalisations</h2>
                 <div class="images-container" id="images-container"></div>
                 <button id="load-more" class="load-more" data-folder="/Nos_secteurs/Images_Industriel">Charger plus d'images ⬎</button>
             </div>
@@ -42,7 +92,24 @@
         
         </main>
         
-        <div id="footer"></div>
+        <footer>
+    
+            <link rel="stylesheet" href="style_header_footer.css">
+            <div class="footer-container">
+                <div class="colonne1">
+                    <p"><u>À propos de M Froid Clim</u></h3>
+                    <p>Tél : +33 (0)6 10 17 44 77</p>
+                    <p>Mail : mfroidclim@gmail.com</p>
+                </div>
+                <div class="colonne2">
+                    <p>9 bis rue de Voisins</p>
+                    <p>91690 Saint-Cyr-la-Rivière</p>
+                    <p>SIRET : 951 950 021 00018</p>
+                </div>
+            </div>
+            <div class="Copyright">
+                © Copyright 2024 M Froid Clim</div>
+          </footer>
 
     </body>
 

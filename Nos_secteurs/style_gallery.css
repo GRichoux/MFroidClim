@@ -2,6 +2,10 @@
     margin: 0 auto;
 }
 
+.gallery h2 { 
+    margin-bottom: 0.75rem;
+}
+
 .images-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

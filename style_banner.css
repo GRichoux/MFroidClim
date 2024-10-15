@@ -1,9 +1,9 @@
 .banner {
+    margin-top: 5rem;
     display: flex;
     align-items: center; /* Aligne le texte et l'image au centre verticalement */
     background-color: #626ea1; /* Couleur de fond */
     padding: 0; /* Pas de padding */
-    margin-top: 5rem; /* Marge supérieure */
     height: 15rem ;
     overflow: hidden;
 }

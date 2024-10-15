@@ -1,16 +1,21 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
 header {
     background-color: #2d2d2d;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
     width: 100%;
     height: 5rem;
     display: flex;
     justify-content: space-between; /* Espace entre les éléments */
     align-items: center;
-
+    padding: 0 2rem;
 }
 
 header .logo-mobile, .logo-computer {
@@ -61,12 +66,12 @@ header button:hover, header .dropbtn:hover {
     display: none;
     position: absolute;
     font-weight: bold;
-    left: 0.55rem;
-    border-radius: 0.5rem;
+    left: 0.5rem;
     width: 100%;
     background-color: #BEEEFF;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 0.5rem 0.25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
     z-index: 1;
 }
 .dropdown-content a {
@@ -74,11 +79,10 @@ header button:hover, header .dropbtn:hover {
     text-decoration: none;
     display: block;
     margin:  auto;
-    width: 90%;
+    width: 100%;
     padding: 5% 10%;
 }
 .dropdown-content a:hover {
-    border-radius: 0.3rem; 
     background-color: #90aed0;
 }
 .dropdown:hover .dropdown-content {
@@ -93,7 +97,67 @@ header button:hover, header .dropbtn:hover {
 
 
 
+.hamburger {
+    display: none; 
+    color: #BEEEFF;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5% 0.5% 1.5%;
+    font-size: 30px;
+    cursor: pointer;
+}
 
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #BEEEFF;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    border: solid #90aed0;
+}
+
+
+/* Pour les écrans de taille inférieure ou égale à 768px (taille commune pour les mobiles) */
+@media only screen and (max-width: 900px) {
+    main {
+        width: 100%;
+        min-width: unset; /* Désactive min-width */
+        padding: 2rem; /* Réduit légèrement les marges intérieures */
+    }
+    header {
+        justify-content: space-between;
+    }
+}  
+
+@media (max-width: 600px) {
+    header .logo-computer{
+        display: none;
+    }
+    header .logo-mobile{
+        display: block;
+    }
+
+    .header-buttons {
+        display: none; 
+    }
+    .hamburger {
+        display: block; 
+    }
+    .hamburger:hover {
+        border: solid #626ea1;
+    }
+    .mobile-menu.active {
+        display: block;
+        justify-self: end;
+        margin-right: 2rem;
+        position: absolute;
+        width: 10%;
+        min-width: 10rem; 
+    }
+}
 
 
 
@@ -134,65 +198,3 @@ footer {
 
 
 
-/* Pour les écrans de taille inférieure ou égale à 768px (taille commune pour les mobiles) */
-@media only screen and (max-width: 900px) {
-    main {
-        width: 100%;
-        min-width: unset; /* Désactive min-width */
-        padding: 2rem; /* Réduit légèrement les marges intérieures */
-    }
-    header {
-        justify-content: space-between;
-    }
-}  
-
-
-
-
-.hamburger {
-    display: none; 
-    color: #BEEEFF;
-    border-radius: 0.5rem;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1.5% 0.5% 1.5%;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #BEEEFF;
-    border-radius: 0.3rem;
-    position: absolute;
-    top: 60px; 
-    right: 0;
-}
-
-@media (max-width: 600px) {
-    header .logo-computer{
-        display: none;
-    }
-    header .logo-mobile{
-        display: block;
-    }
-
-    .header-buttons {
-        display: none; 
-    }
-    .hamburger {
-        display: block; 
-    }
-    .hamburger:hover {
-        border: solid #626ea1;
-    }
-    .mobile-menu.active {
-        display: block;
-        justify-self: end;
-        margin-right: 2rem;
-        position: absolute;
-        width: 10%;
-        min-width: 10rem; 
-    }
-}
