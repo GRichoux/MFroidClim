@@ -186,12 +186,12 @@ main {
 
 
 
-.bloc-marques {
+.bloc-marques, .integration-maps-container {
     object-position: center;
     padding: 1rem 1rem;
     background-color: #90aed0;
     object-position: center;
-    margin: 3rem auto 0;
+    margin: 2rem auto 0;
     text-align: center;
     border-radius: 0.5rem;
   }
@@ -244,15 +244,6 @@ main {
       padding: 2rem; /* Réduit légèrement les marges intérieures */
   }
 
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -279,6 +270,7 @@ p {
 
 
 
+
 a[href^="tel"] {
   color: inherit; /* Applique la même couleur que le texte environnant */
   text-decoration: none; /* Enlève le soulignement */
@@ -289,4 +281,20 @@ input[type="button"],
 input[type="submit"] {
     -webkit-appearance: none; /* Désactive le style par défaut des boutons iOS */
     appearance: none;
+}
+
+.integration-maps-container h2 {
+  margin-bottom: 0.9rem;
+}
+.integration-maps {
+  padding: 0;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+
+@media (max-width: 600px) {
+  .integration-maps-container {
+    width: 100%;
+  }
 }

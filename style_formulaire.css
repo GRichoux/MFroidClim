@@ -6,7 +6,7 @@
 .form-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 0 3rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -23,6 +23,7 @@
 .contact-info h2 {
   margin-top: 0;
 }
+
 
 .contact-info p {
   line-height: 1.6;
